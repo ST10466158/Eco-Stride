@@ -31,4 +31,9 @@ Eco Stride website project:
 
 ## Contact 
 - For questions, reach out at crispenkuziwa@icloud.com or call 079 399 0961
- 
+
+
+
+
+![alt text](image.png)
+ ![alt text](image-1.png)
