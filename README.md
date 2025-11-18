@@ -37,3 +37,14 @@ Eco Stride website project:
 
 ![alt text](image.png)
  ![alt text](image-1.png)
+
+
+
+ ## Part 3 - Enhancements
+ - Dynamic product rendering with JavaScript
+ - Quick view modal and Lightbox
+ - Filtering by size, price and color
+ - Ajax form submission
+ - SEO: meta, sitemap, robots.txt
+ - Speed: lazy loading, AVIF
+ - Security: CSP headers 

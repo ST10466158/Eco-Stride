@@ -135,5 +135,155 @@ body{
     width: 30%;
 }
 
+/* -------------------------------------------------- */
+/* Carousel & Cards */
+/* -------------------------------------------------- */
+.sneaker-carousel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  transition: transform .4s ease;
+  padding: 10px 0;
+}
+.sneaker-card {
+  flex: 0 0 300px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  text-align: center;
+}
+.sneaker-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.sneaker-card h3 { margin: 0.5rem 0; font-size: 1.1rem; }
+.price { color: #b12704; font-weight: bold; }
+.quick-view-btn,
+.add-to-cart {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: .6rem 1rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.quick-view-btn:hover,
+.add-to-cart:hover { background: #004999; }
 
+/* Arrows */
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,.6);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
 
+/* Filters */
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+.filters label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Modal */
+dialog {
+  max-width: 90vw;
+  border: none;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+dialog::backdrop { background: rgba(0,0,0,.7); }
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sneaker-carousel { flex-direction: column; align-items: center; }
+  .carousel-prev, .carousel-next { display: none; }
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.sneaker-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform .2s;
+  text-align: center;
+}
+
+.sneaker-card:hover {
+  transform: translateY(-5px);
+}
+
+.sneaker-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.sneaker-card h3 {
+  margin: 0.8rem 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.price {
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.quick-view-btn {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  width: 40%;
+  margin: 0.5rem auto;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quick-view-btn:hover {
+  background: #1565c0;
+}

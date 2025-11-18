@@ -1,25 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Eco Stride | Sales</title>
-        <link rel="stylesheet" href="css/mystyle.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eco Stride | Sales</title>
+  <link rel="stylesheet" href="css/mystyle.css" />
+</head>
+<body>
 
-    </head>
-    <body>
-        <nav>
-         <a href="index.html">Home</a>
-        <a href="Sales.html">Sales</a>
-        <a href="Exclusives.html">Exclusives</a>
-        <a href="About Us.html">About Us</a>
-        <a href="Contact Us.html">Contact Us</a>
-        </nav>
-        <h1>Sales</h1>
-        <h2>STAY TUNED FOR UPCOMING SALES AND DEALS</h2>
-        <div class="image-container">
-    <img src="images/sneaker pic 4.avif" alt="Image 4" width="30%">
-    <img src="images/sneaker pic 5.avif" alt="Image 5" width="30%">
-    <img src="images/sneaker pic 6.avif" alt="Image 6" width="30%">
-  </div>
-        
-    </body>
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Sales.html">Sales</a>
+    <a href="Exclusives.html">Exclusives</a>
+    <a href="About Us.html">About Us</a>
+    <a href="Contact Us.html">Contact Us</a>
+  </nav>
+
+  <main class="sales-page">
+
+    <h1>Sales</h1>
+    <h2>NEW KICKS FOR THE WEEK</h2>
+
+    <div class="wrapper">
+      <!-- FILTERS -->
+      <aside class="filters" aria-label="Filter sneakers">
+        <label>Size:
+          <select id="sizeFilter">
+            <option value="">All</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+          </select>
+        </label>
+
+        <label>Color:
+          <select id="colorFilter">
+            <option value="">All</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+          </select>
+        </label>
+
+        <label>Price:
+          <select id="priceFilter">
+            <option value="">All</option>
+            <option value="0-1000">R0 – R1,000</option>
+            <option value="1001-2000">R1,001 – R2,000</option>
+            <option value="2001-9999">R2,001+</option>
+          </select>
+        </label>
+      </aside>
+
+      <!-- PRODUCTS GRID -->
+      <section id="productsGrid" class="products-grid" aria-label="Sneaker list"></section>
+    </div>
+
+  </main>
+
+  <!-- QUICK-VIEW MODAL (optional – you can keep it) -->
+  <dialog id="quickView" class="modal">
+    <article id="modalContent"></article>
+    <button class="close-modal" aria-label="Close">X</button>
+  </dialog>
+
+  <script src="index.js"></script>
+</body>
 </html>
