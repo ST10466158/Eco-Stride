@@ -14,6 +14,14 @@
         <a href="Contact Us.html">Contact Us</a>
         </nav>
         <h1>Contact Us</h1>
+<form id="contactForm" novalidate>
+  <label>Name <input type="text" id="cname" required></label>
+  <label>Email <input type="email" id="cemail" required></label>
+  <label>Subject <input type="text" id="csubject" required></label>
+  <label>Message <textarea id="cmessage" required minlength="10"></textarea></label>
+  <button type="submit">Send Message</button>
+  <p id="contactResponse" aria-live="polite"></p>
+</form>
         <p>
             We would love to hear from you! Whether you have a question about our kicks, need help with an order, or just want to share your thoughts,the Eco Stride team is here to assist.
         </p>

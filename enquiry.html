@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enquire about Eco Stride sneakers, sponsorship, or volunteering opportunities.">
+  <title>Enquiry | Eco Stride</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Sales.html">Sales</a>
+    <a href="Exclusives.html">Exclusives</a>
+    <a href="About Us.html">About Us</a>
+    <a href="Contact Us.html">Contact</a>
+    <a href="enquiry.html">Enquiry</a>
+  </nav>
+
+  <main class="form-page">
+    <h1>Product & Partnership Enquiry</h1>
+    <form id="enquiryForm" novalidate>
+      <label>
+        Your Name <input type="text" id="ename" required minlength="2">
+      </label>
+      <label>
+        Email <input type="email" id="eemail" required>
+      </label>
+      <label>
+        Interested In
+        <select id="einterest" required>
+          <option value="">Select...</option>
+          <option value="buy">Buying Sneakers</option>
+          <option value="sponsor">Sponsorship</option>
+          <option value="volunteer">Volunteering</option>
+        </select>
+      </label>
+      <label>
+        Message <textarea id="emessage" required minlength="10"></textarea>
+      </label>
+      <button type="submit">Send Enquiry</button>
+      <p id="enquiryResponse" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
